@@ -1,19 +1,27 @@
-// const informacao = prompt('Digite um valor ai pra mim')
-// const confirmacao = confirm('Você quer apagar o registro?')
-// alert(confirmacao)
+/* 
+== Maneiras de pegar entrada de dados do usuário ==
+const informacao = prompt('Digite um valor ai pra mim')
+const confirmacao = confirm('Você quer apagar o registro?')
+alert(confirmacao)
+*/
 
-
-
-// isNaN
-// vai retornar true se o valor for um NaN
-// vai retornar false se o valor não for um NaN
+/*
+== isNaN() ==
+vai retornar true se o valor for um NaN
+vai retornar false se o valor não for um NaN
+*/
 
 // true || true => true
 // false || true => true
 // true || false =>  true
 // false || false => false
-/*const numero1 = prompt('Digite o primeiro número')
+
+/*
+== Validação sem utilizar o NOT ==
+
+const numero1 = prompt('Digite o primeiro número')
 console.log(numero1)
+
 if(isNaN(Number(numero1)) || numero1 == '' || numero1 == null){
     alert('Valor inválido')
 } else {
@@ -26,16 +34,18 @@ if(isNaN(Number(numero1)) || numero1 == '' || numero1 == null){
     
         console.log(`O resultado é: ${resultado}`)
     }
-} */
+} 
+*/
 
-// AND (&&) - OR (||) - NOT (!)
+// Operadores Lógicos: AND (&&) - OR (||) - NOT (!)
 
-// string, number, boolean, null, undefined
-
+// Tipos primitivos: string, number, boolean, null, undefined
 
 // null, undefined, string vazia (''), 0 => é convertido para false (booleanamente falando)
 
 /*
+== Validação utilizando o NOT ==
+
 const numero1 = prompt('Digite o primeiro número')
 
 if(!numero1 || isNaN(Number(numero1))){
