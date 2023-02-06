@@ -1,125 +1,86 @@
 /*
-function arrumarQuarto(){
-    // corpo da função
+// primitivos
+// number, string, boolean, null, undefined, unknown, Function
 
-    console.log('Dobrar roupas que estão em cima da cama')
+// Array = Vetor = Lista
+// [] => defini um array
+let nomesGrowdevers = ['Pedro', 'Sheila', 'Lucas Pires', 'Lucas Santos']
 
-    console.log('Guardar as roupas dobradas no roupeiro')
+let primos = [2, 3, 5, 7, 11]
 
-    console.log('Arrumar a cama')
-}
+let modulos = [] // => lista vazia
 
-// chamada da função
-arrumarQuarto()
+console.log(nomesGrowdevers)
+console.log(nomesGrowdevers[3])
+
+// array é uma lista de elementos indexada
+// todo elemento dentro de uma lista, está em um indice
+
+// o indice inicial sempre vai ser o indice 0
+
+// em um array, qual será o último indice? o tamanho da lista - 1
+
+let nome = 'Abner'
+nome = 'Edson'
+
+nomesGrowdevers[1] = 'Abner'
+nomesGrowdevers[4] = 'Rodrigo'
+console.log(nomesGrowdevers)
+
 */
 
 /*
-// função com parametro
 
-function fazerComida(comida) {
+const growdevers = [];
+console.log(growdevers)
 
-    // se for strognoff
+growdevers.push('Rodrigo')
+console.log(growdevers)
 
-    console.log('pica a carne')
+growdevers.push('Caio')
+console.log(growdevers)
 
-    console.log('pica cebola')
+growdevers.push('Sheila', 'Peterson', 'Laio')
+console.log(growdevers)
 
-    console.log('coloca a carne no fogo')
+growdevers.unshift('Pedro')
+console.log(growdevers)
 
-    console.log('coloca a cebola')
+// push => adiciona o elemento no final da lista
+// pop => remove o último elemento da lista
+// unshift => adiciona o elemento no inicio da lista
+// shift => remove o primeiro elemento da lista
 
-    //..
+// MÉTODO (method) = FUNÇÃO (function) => MESMA COISA
+growdevers.pop()
+console.log(growdevers)
 
-    // se for carreteiro
+growdevers.pop()
+console.log(growdevers)
 
-    // ....
-}
-
-fazerComida('Arroz com carne moída')
-
-fazerComida('Strogonoff de carne')
-*/
-
-// função com parametros e retorno
-/*
-function comprarProduto(dinheiro, produto){
-    console.log('Ir ao mercado apé')
-
-    console.log(`Ir até a prateleira para comprar o ${produto}`)
-
-    let valorProduto = 2.99
-    console.log(`O ${produto} custa ${valorProduto}`)
-
-    console.log(`Levar o ${produto} até o caixa`)
-
-    const troco = dinheiro - valorProduto
-
-    console.log('Pagar')
-
-    console.log(`Troco: ${troco}`)
-
-    console.log('Ir para casa apé')
-
-    console.log(`Entregar o ${produto} para quem chamou`)
-
-    return produto;
-}
-
-
-const produtoComprado = comprarProduto(10.00, 'Pao')
-
-console.log('')
-console.log(`O produto ${produtoComprado} foi comprado e entregue`)
-
-
-
-
-// 311
-function ePrimo(numero){
-    if(numero < 2){
-        return false;
-    }
-
-    if(numero === 2){
-        return true;
-    }
-
-    // primo === divisivel por 1 e por ele mesmo
-    // 1, 311
-    // 2 ... 156
-    for (let index = 2; index <= parseInt(numero/2)+1; index++) {
-        if(numero % index === 0){
-            return false;
-        }    
-    }
-
-    return true;
-}
-
-const numeroUsuario = Number(prompt('Digita um número'))
-
-const numeroEPrimo = ePrimo(numeroUsuario)
-
-if(numeroEPrimo){
-    console.log(`O número ${numeroUsuario} é primo`)
-} else {
-    console.log(`O número ${numeroUsuario} não é primo`)
-}
-
-function funcaoSemParametro(){}
-
-function funcaoComParametro(p1) {  }
-
-function funcaoComParametroERetorno(p1, p2){
-    return 'resultado a ser retornado'
-}
+growdevers.shift()
+console.log(growdevers)
 
 */
 
-function atividade1(){
-   alert('Função para fazer o login') 
+
+const growdevers = ['Natan', 'Gabriel', 'Lucas Pires', 'Sheila', 'Caio']
+// console.log(growdevers[0])
+// console.log(growdevers[1])
+// console.log(growdevers[2])
+// console.log(growdevers[3])
+// console.log(growdevers[4])
+
+
+// 0 ... 4
+for(let indice = 0; indice < growdevers.length; indice++){
+    console.log(`O nome do growdever é: ${growdevers[indice]}`)
 }
 
-function atividade1(){
-    alert('Função para fazer o login') 
- }
+const numeros = [2, 4, 6, 9, 10]
+
+for (let indice = 0; indice < numeros.length; indice++) {
+    const elemento = numeros[indice]
+    const dobro = elemento * 2
+    console.log(`O dobro do número ${elemento} é: ${dobro}`)
+}
