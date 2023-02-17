@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Cadastro de dev</h2>
+    <!-- 
+        Dados pessoais:
+            Nome,
+            Data nascimento,
+            Email ,
+            Whats
+            Endereço completo,
+            PRetenção salarial,
+
+       Conhecimentos:
+            Área de atuação: Front-end, Back-end, Full-stack
+            Senioridade: Senior, Pleno, Junior
+            Tecnologias: HTML, CSS, Javascript, NodeJS, C#, Java
+            Experiencias: texto livre
+            Anexa curriculo
+     -->
+
+     <form id="formularioCadastro" onsubmit="cadastrarDev(event)">
+        <fieldset>
+            <legend><strong>Dados pessoais</strong></legend>
+            <label for="nomeCompleto">Nome Completo: </label>
+            <input type="text" required id="nomeCompleto" name="nomeCompleto"  placeholder="Digite seu nome..." >
+            
+            <br><br>
+
+            <label for="dataNascimento">Data de nascimento: </label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+            <br><br>
+
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+
+            <br><br>
+
+            <label for="whats">Whats app: </label>
+            <input type="tel" name="whats" id="whats" placeholder="51922223333" required>
+
+            <br><br>
+
+            <label for="enderecoCompleto">Endereço completo: </label>
+            <input type="text" name="enderecoCompleto" id="enderecoCompleto" placeholder="Rua X, 000, Canudos - RS">
+
+            <br><br>
+
+            <label for="pretSala">Pretenção salarial: </label>
+            <input type="number" name="pretSalarial" id="pretSalarial">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong>Conhecimentos técnicos</strong></legend>
+
+            <label for="">Área de atuação:</label> <br>
+
+            <input type="radio" name="areaAtuacao" id="frontend" value="frontend" checked>
+            <label for="frontend">Front-end</label>
+            <br>
+            <input type="radio" name="areaAtuacao" id="backend" value="backend" >
+            <label for="backend">Back-end</label>
+            <br>
+            <input type="radio" name="areaAtuacao" id="fullstack" value="fullstack">
+            <label for="fullstack">Full-stacj</label>
+
+            <br> <br>
+
+            <label for="senioridade">Senioridade: </label>
+            <select name="senioridade" id="senioridade">
+                <option value="" disabled selected>Selecione</option>
+                <option value="junior">Junior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Senior</option>
+            </select>
+
+            <br> <br>
+
+            <label for="tecnologias">Tecnologias: </label>
+
+            <br>
+
+            <input type="checkbox" name="tecnologia" id="html" value="html"> 
+            <label for="html">HTML</label>
+
+            <input type="checkbox" name="tecnologia" id="javascript" value="javascript"> 
+            <label for="javascript">Javascript</label>
+
+            <input type="checkbox" name="tecnologia" id="css" value="css"> 
+            <label for="css">CSS</label>
+
+            <input type="checkbox" name="tecnologia" id="nodejs" value="nodejs"> 
+            <label for="nodejs">NodeJS</label>
+            
+            <br><br>
+
+            <input type="checkbox" name="tecnologia" id="typescript" value="typescript"> 
+            <label for="typescript">Typescript</label>
+
+            <input type="checkbox" name="tecnologia" id="postgresql" value="postgresql"> 
+            <label for="postgresql">PostgreSQL</label>
+
+            <input type="checkbox" name="tecnologia" id="java" value="java"> 
+            <label for="java">Java</label>
+
+            <input type="checkbox" name="tecnologia" id="csharp" value="csharp"> 
+            <label for="csharp">C#</label>
+
+            <br> <br>
+
+            <label for="experiencia">Conte um pouco da sua experiencia: </label> <br>
+            <textarea name="experiencia" id="experiencia" cols="50" rows="5"></textarea>
+
+            <br> <br>
+
+            <label for="curriculo">Anexe seu curriculo: </label> <br>
+            <input type="file" name="curriculo" id="curriculo" accept=".pdf, .doc">
+        </fieldset>
+
+        <br> <br>
+
+
+
+        <button type="submit">  <strong> Cadastrar DEV </strong>  <br></button>
+        
+        <br><br>
+
+     </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
