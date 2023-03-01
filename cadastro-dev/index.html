@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+
+    <!-- <a href="lista-devs.html">Ver lista</a> -->
+
+    <button onclick="navegarParaLista()">Ver lista</button>
+
+
     <h2>Cadastro de dev</h2>
     <!-- 
         Dados pessoais:
@@ -28,8 +34,9 @@
      <form id="formularioCadastro" onsubmit="cadastrarDev(event)">
         <fieldset>
             <legend><strong>Dados pessoais</strong></legend>
+
             <label for="nomeCompleto">Nome Completo: </label>
-            <input type="text" required id="nomeCompleto" name="nomeCompleto"  placeholder="Digite seu nome..." >
+            <input type="text" required minlength="3"  id="nomeCompleto" name="nomeCompleto" placeholder="Digite seu nome..." >
             
             <br><br>
 
@@ -44,7 +51,7 @@
             <br><br>
 
             <label for="whats">Whats app: </label>
-            <input type="tel" name="whats" id="whats" placeholder="51922223333" required>
+            <input type="tel" name="whats" id="whats" maxlength="11" placeholder="51922223333" required>
 
             <br><br>
 
@@ -54,7 +61,7 @@
             <br><br>
 
             <label for="pretSala">Pretenção salarial: </label>
-            <input type="number" name="pretSalarial" id="pretSalarial">
+            <input type="number"  name="pretSalarial" id="pretSalarial">
         </fieldset>
 
         <br>
@@ -128,14 +135,12 @@
 
         <br> <br>
 
-
-
         <button type="submit">  <strong> Cadastrar DEV </strong>  <br></button>
-        
+
         <br><br>
 
      </form>
 
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

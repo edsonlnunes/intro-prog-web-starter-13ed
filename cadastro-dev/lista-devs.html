@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lista Dev's</h2>
+
+    <!-- 
+        Dados pessoais:
+            Nome,
+            Data nascimento,
+            Email ,
+            Whats
+            Endereço completo,
+            PRetenção salarial,
+
+       Conhecimentos:
+            Área de atuação: Front-end, Back-end, Full-stack
+            Senioridade: Senior, Pleno, Junior
+            Tecnologias: HTML, CSS, Javascript, NodeJS, C#, Java
+            Experiencias: texto livre
+            Anexa curriculo
+     -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Dt. Nascimento</th>
+                <th>E-mail</th>
+                <th>Whats</th>
+                <th>Endereço</th>
+                <th>Pret. Salarial</th>
+                <th>Área de atuação</th>
+                <th>Senioridade</th>
+                <th>Tecnologias</th>
+                <th>Experiência</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <!-- <tr>
+                <td>Édson</td>
+                <td>31/10/1997</td>
+                <td>edson@gmail.com</td>
+                <td>51991312321</td>
+                <td>Rua x, Cidade Y</td>
+                <td>R$ 1000,00</td>
+                <td>Back-end</td>
+                <td>Pleno</td>
+                <td>HTML, Node, CSS</td>
+                <td>Tenhho mtui</td>
+            </tr> -->
+        </tbody>
+    </table>
+
+    <script src="./js/lista-devs.js"></script>
+
+</body>
+</html>
